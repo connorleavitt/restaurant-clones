@@ -90,12 +90,12 @@ body {
 .slide {
   position: absolute;
   inset: 0;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-.slide[data-active] {
+/* .slide[data-active] {
   opacity: 1;
-}
+} */
 
 .slide > img {
   display: block;
