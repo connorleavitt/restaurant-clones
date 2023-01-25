@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
-// import About from "../../components/About";
+import About from "../../components/About";
 // import Hours from "../../components/Hours";
 // import Specials from "../../components/Specials";
 // import Testimonials from "../../components/Testimonials";
@@ -13,11 +13,11 @@ export default function HomePage() {
     <div className="main">
       <Navbar />
       <Hero />
-      {/* <About />
-      <Hours />
-      <Specials />
-      <Testimonials />
-      <Contact /> */}
+      <About />
+      {/* <Hours /> */}
+      {/* <Specials /> */}
+      {/* <Testimonials /> */}
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
