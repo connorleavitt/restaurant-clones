@@ -15,12 +15,16 @@ body {
   font-family: sans-serif;
 }
 
+.main {
+  position: relative;
+}
+
 /* NAVBAR */
 
 .navbar {
   z-index: 10;
-
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   display: flex;
   align-items: center;
@@ -37,20 +41,26 @@ body {
 .navbar-logo {
   font-style: italic;
   font-weight: bold;
+  padding: 1rem;
+}
+
+.navbar-logo:hover {
+  cursor: pointer;
 }
 
 .navbar-list {
   display: flex;
   padding: 0;
   margin: 0;
-  gap: 1rem;
+  gap: 0.25rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 .navbar-list-item {
   cursor: pointer;
   list-style: none;
+  padding: 0.4rem;
 }
 
 .navbar-list-item:hover {
