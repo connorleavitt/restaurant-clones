@@ -88,7 +88,7 @@ export default function Hero() {
       </div>
       <div className="hero-content">
         <div className="hero-logo">
-          <p className="hero-logo-text">sauceLEAF 🍁</p>
+          <h1 className="hero-logo-text">sauceLEAF 🍁</h1>
         </div>
         <div className="hero-title-container">
           {heroHeaderTextData.map((text, index) => {
@@ -101,7 +101,7 @@ export default function Hero() {
                     : "header-text"
                 }
               >
-                <p className="hero-title-text">{text}</p>
+                <h1 className="hero-title-text">{text}</h1>
               </div>
             );
           })}

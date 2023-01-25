@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  line-height: 1.6;
 }
 
 .main {
@@ -181,7 +182,7 @@ body {
 
 .header-text {
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   opacity: 0;
   transition-duration: 500ms;
@@ -253,8 +254,93 @@ body {
 }
 
 .about-main {
-  padding-top: var(--nb-height);
-  height: 40rem;
+  padding-top: 10rem;
+  /* padding-top: var(--nb-height); */
+  margin: auto 7.5rem;
+}
+
+.about--header-text {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about--header-text-content {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.about--header-text-content::before,
+.about--header-text-content::after {
+  content: url(../../public/img/header_decorator_orange.png);
+}
+
+.about--header-subtext {
+  margin: 0 5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about--header-subtext-content {
+  margin: 2rem;
+  margin-bottom: 5rem;
+  width: 500px;
+  padding: 0;
+  font-style: italic;
+  /* font-size: 0.75rem; */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.about--main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about--main-content-header {
+  color: orange;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.about--main-content-text {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.about--main-content-text > span {
+  color: orange;
+  font-weight: bold;
+}
+
+.about--slider1-image-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-slide {
+  position: absolute;
+  inset: 0;
+  transition-duration: 500ms;
+  opacity: 0;
+}
+
+.about-slide.active {
+  opacity: 1;
+}
+
+.about-slide > img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 /* FOOTER */
