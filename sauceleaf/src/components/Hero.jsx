@@ -1,9 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import { heroSliderData } from "./HeroSliderData";
+import React, { useEffect, useState } from "react";
+import { heroSliderData, heroHeaderTextData } from "./HeroSliderData";
+
+import slideSeperator from "../../public/img/slide-separator-orange.png";
 
 export default function Hero() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [currentHeaderTextIndex, setCurrentHeaderTextIndex] = useState(0);
 
   function changeHeroImage(input) {
     if (input === "prev") {
@@ -18,6 +21,30 @@ export default function Hero() {
       return setCurrentSlideIndex(currentSlideIndex + 1);
     }
   }
+
+  // Hero image transition
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentSlideIndex === heroSliderData.length - 1) {
+        return setCurrentSlideIndex(0);
+      }
+      return setCurrentSlideIndex(currentSlideIndex + 1);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [currentSlideIndex]);
+
+  // Header text transition
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentHeaderTextIndex === heroHeaderTextData.length - 1) {
+        return setCurrentHeaderTextIndex(0);
+      }
+      return setCurrentHeaderTextIndex(currentHeaderTextIndex + 1);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentHeaderTextIndex]);
 
   return (
     <section className="hero-main">
@@ -57,6 +84,35 @@ export default function Hero() {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="hero-content">
+        <div className="hero-logo">
+          <p className="hero-logo-text">sauceLEAF 🍁</p>
+        </div>
+        <div className="hero-title-container">
+          {heroHeaderTextData.map((text, index) => {
+            return (
+              <div
+                key={index}
+                className={
+                  index === currentHeaderTextIndex
+                    ? "header-text active"
+                    : "header-text"
+                }
+              >
+                <p className="hero-title-text">{text}</p>
+              </div>
+            );
+          })}
+        </div>
+        <div className="hero-break">
+          <img src={slideSeperator} alt="slide seperator"></img>
+        </div>
+        <div className="hero-subtext">
+          <p className="hero-subtext-content">
+            We serve only Zabihah Halal in our menu
+          </p>
         </div>
       </div>
     </section>
