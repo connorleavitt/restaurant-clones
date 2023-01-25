@@ -1,27 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import hero1 from "../../public/img/hero-1.jpg";
-import hero2 from "../../public/img/hero-2.jpg";
-import hero3 from "../../public/img/hero-3.jpg";
+import { heroSliderData } from "./HeroSliderData";
 
 export default function Hero() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  console.log(currentSlideIndex);
-
-  const slides = [hero1, hero2, hero3];
-
   function changeHeroImage(input) {
-    console.log("clicked");
     if (input === "prev") {
-      console.log("prev");
       if (currentSlideIndex === 0) {
-        return setCurrentSlideIndex(slides.length - 1);
+        return setCurrentSlideIndex(heroSliderData.length - 1);
       }
       return setCurrentSlideIndex(currentSlideIndex - 1);
     } else if (input === "next") {
-      console.log("next");
-      if (currentSlideIndex === slides.length - 1) {
+      if (currentSlideIndex === heroSliderData.length - 1) {
         return setCurrentSlideIndex(0);
       }
       return setCurrentSlideIndex(currentSlideIndex + 1);
@@ -53,14 +44,20 @@ export default function Hero() {
             className="carousel-btn-next-icon"
           />
         </button>
-        <ul>
-          <li className="slide">
-            <img
-              src={slides[currentSlideIndex]}
-              alt={`hero-image-${slides[currentSlideIndex]}`}
-            ></img>
-          </li>
-        </ul>
+        <div className="hero-image-container">
+          {heroSliderData.map((slide, index) => {
+            return (
+              <div
+                key={index}
+                className={
+                  index === currentSlideIndex ? "slide active" : "slide"
+                }
+              >
+                <img src={slide} alt={`hero-image-${index}`}></img>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

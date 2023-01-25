@@ -70,7 +70,8 @@ body {
 /* HERO */
 
 .hero-main {
-  height: calc(100vh - var(--nb-height));
+  height: 100vh;
+  /* height: calc(100vh - var(--nb-height)); */
 }
 
 /* Hero Carousel */
@@ -81,21 +82,21 @@ body {
   position: relative;
 }
 
-.hero-image-carousel > ul {
+.hero-image-container {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .slide {
   position: absolute;
   inset: 0;
-  /* opacity: 0; */
+  transition-duration: 300ms;
+  opacity: 0;
 }
 
-/* .slide[data-active] {
+.slide.active {
   opacity: 1;
-} */
+}
 
 .slide > img {
   display: block;
