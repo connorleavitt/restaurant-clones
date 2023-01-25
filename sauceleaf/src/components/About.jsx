@@ -28,6 +28,18 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [currentSlideIndex1]);
 
+  // About slider 2 transition
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentSlideIndex2 === aboutSlider2Data.length - 1) {
+        return setCurrentSlideIndex2(0);
+      }
+      return setCurrentSlideIndex2(currentSlideIndex2 + 1);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [currentSlideIndex2]);
+
   return (
     <div className="about-section">
       <div className="next-section-btn-container">
@@ -92,8 +104,24 @@ export default function Hero() {
             </div>
           </div>
           <div className="bottom-left">
-            <div className="about--main-content-image">
-              <img src={ornament} alt="content seperator"></img>
+            <div className="about--slider1-image-container">
+              {aboutSlider2Data.map((slide, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={
+                      index === currentSlideIndex2
+                        ? "about-slide active"
+                        : "about-slide"
+                    }
+                  >
+                    <img
+                      src={slide}
+                      alt={`about--slider2-image-${index}`}
+                    ></img>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="bottom-right">

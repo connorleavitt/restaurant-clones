@@ -269,11 +269,13 @@ body {
 .about--header-text-content {
   margin: 0;
   padding: 0.2rem;
+  font-size: 1.7rem;
 }
 
 .about--header-text-content::before,
 .about--header-text-content::after {
   content: url(../../public/img/header_decorator_orange.png);
+  padding: 1rem;
 }
 
 .about--header-subtext {
@@ -296,21 +298,24 @@ body {
 
 .about--main-content {
   display: grid;
+  gap: 3rem;
+  margin-bottom: 7.5rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .about--main-content-header {
+  text-align: center;
   color: orange;
   font-weight: bold;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
 }
 
 .about--main-content-text {
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .about--main-content-text > span {
@@ -318,7 +323,15 @@ body {
   font-weight: bold;
 }
 
-.about--slider1-image-container {
+.about--main-content-break {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.about--slider1-image-container,
+.about--slider2-image-container {
   margin: 0;
   padding: 0;
   position: relative;
@@ -371,8 +384,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #3b3a36;
   transition: background-color 400ms ease-in-out;
@@ -384,5 +397,5 @@ body {
 }
 
 .footer-icon {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
