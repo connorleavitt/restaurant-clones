@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import About from "../../components/About";
-// import Hours from "../../components/Hours";
+import Hours from "../../components/Hours";
 // import Specials from "../../components/Specials";
 // import Testimonials from "../../components/Testimonials";
 // import Contact from "../../components/Contact";
@@ -14,7 +14,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Hours /> */}
+      <Hours />
       {/* <Specials /> */}
       {/* <Testimonials /> */}
       {/* <Contact /> */}

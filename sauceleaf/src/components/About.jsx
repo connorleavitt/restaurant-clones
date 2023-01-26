@@ -9,7 +9,7 @@ import {
   aboutSlider2Data,
 } from "../components/AboutSliderData";
 
-export default function Hero() {
+export default function About() {
   const myRef = useRef(null);
 
   const executeScroll = () => myRef.current.scrollIntoView();

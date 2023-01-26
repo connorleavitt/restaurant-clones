@@ -293,7 +293,7 @@ body {
   font-style: italic;
   /* font-size: 0.75rem; */
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .about--main-content {
@@ -314,6 +314,8 @@ body {
 }
 
 .about--main-content-text {
+  color: rgba(0, 0, 0, 0.5);
+
   margin: 0;
   padding: 1rem;
 }
@@ -354,6 +356,96 @@ body {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+/* HOURS */
+
+.hours-section {
+  background-image: url(../public/img/opening_hours.jpg);
+  background-position: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.hours--title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.hours--title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.hours--title-text::before {
+  content: url(../../public/img/timetable-decorator_orange.png);
+  padding: 1rem;
+}
+
+.hours--title-text::after {
+  content: url(../../public/img/timetable-decorator2_orange.png);
+  padding: 1rem;
+}
+
+.hours--subtitle {
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: rgb(243, 100, 48);
+}
+
+.hours--main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hours--main-content-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours--main-content-header {
+  width: 80%;
+  text-align: center;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: rgb(243, 100, 48);
+  margin: 0.2rem;
+}
+
+.hours--main-content-info {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hours--subtitle2 {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: white;
 }
 
 /* FOOTER */
