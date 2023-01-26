@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 
-import ornament from "../../public/img/ornament.png";
-import aboutHeaderDecorator from "../../public/img/header_decorator_orange.png";
+import ornament from "../assets/img/ornament.png";
+import aboutHeaderDecorator from "../assets/img/header_decorator_orange.png";
 
 import {
   aboutSlider1Data,

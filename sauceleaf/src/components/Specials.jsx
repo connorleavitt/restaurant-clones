@@ -1,6 +1,6 @@
 import React from "react";
 
-import halalImage from "../../public/img/halal.png";
+import halalImage from "../assets/img/halal.png";
 
 export default function Specials() {
   return (

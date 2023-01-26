@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { heroSliderData, heroHeaderTextData } from "./HeroSliderData";
 
-import slideSeperator from "../../public/img/slide-separator-orange.png";
+import slideSeperator from "../assets/img/slide-separator-orange.png";
 
 export default function Hero() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);

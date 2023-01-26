@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import testimonialsLogo from "../../public/img/testimonials_logo_orange.png";
+import testimonialsLogo from "../assets/img/testimonials_logo_orange.png";
 import { testimonialsTextData } from "./TestimonialsData";
 
 export default function Testimonials() {
