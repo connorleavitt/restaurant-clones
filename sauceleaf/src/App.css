@@ -274,7 +274,7 @@ body {
 
 .about--header-text-content::before,
 .about--header-text-content::after {
-  content: url(../../public/img/header_decorator_orange.png);
+  content: url(./assets/img/header_decorator_orange.png);
   padding: 1rem;
 }
 
@@ -361,7 +361,7 @@ body {
 /* HOURS */
 
 .hours-section {
-  background-image: url(../public/img/opening_hours.jpg);
+  background-image: url(./assets/img/opening_hours.jpg);
   background-position: center;
   min-height: 600px;
   position: relative;
@@ -387,12 +387,12 @@ body {
 }
 
 .hours--title-text::before {
-  content: url(../../public/img/timetable-decorator_orange.png);
+  content: url(./assets/img/timetable-decorator_orange.png);
   padding: 1rem;
 }
 
 .hours--title-text::after {
-  content: url(../../public/img/timetable-decorator2_orange.png);
+  content: url(./assets/img/timetable-decorator2_orange.png);
   padding: 1rem;
 }
 
@@ -525,7 +525,7 @@ body {
 
 .specials--menu-button-container::before,
 .specials--menu-button-container::after {
-  content: url(../public/img/button_line.png);
+  content: url(./assets/img/button_line.png);
   margin: 0 2rem;
 }
 
@@ -545,7 +545,7 @@ body {
 /* TESTIMONIALS */
 
 .testimonials-section {
-  background-image: url(../../public/img/testimonials.jpg);
+  background-image: url(./assets/img/testimonials.jpg);
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;

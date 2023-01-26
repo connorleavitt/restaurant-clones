@@ -1,8 +1,6 @@
 import React from "react";
 
 import columnDivider from "../assets/img/column-divider_orange.png";
-import timetableDecorator from "../assets/img/timetable-decorator_orange.png";
-import timetableDecorator2 from "../assets/img/timetable-decorator2_orange.png";
 
 export default function Hours() {
   return (
