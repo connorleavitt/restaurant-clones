@@ -5,7 +5,7 @@
 }
 
 :root {
-  --nb-height: 65px;
+  --nb-height: 90px;
 }
 
 body {
@@ -43,6 +43,7 @@ body {
   font-style: italic;
   font-weight: bold;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 .navbar-logo:hover {
@@ -53,9 +54,9 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  gap: 0.25rem;
+  gap: 1.5rem;
   text-transform: uppercase;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .navbar-list-item {
@@ -161,14 +162,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5rem 0;
+  margin: 5rem 0 7rem 0;
+  /* font-size: 8rem; */
 }
 
 .hero-logo-text {
-  font-size: 2rem;
+  font-size: 5rem;
   font-style: italic;
   font-weight: bold;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   color: black;
   text-shadow: 4px 4px 10px #f7f7f7;
 }
@@ -182,7 +184,7 @@ body {
 
 .header-text {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
   opacity: 0;
   transition-duration: 500ms;
@@ -200,7 +202,7 @@ body {
 }
 
 .hero-break {
-  margin: 2rem 0 1rem 0;
+  margin: 5rem 0 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +218,7 @@ body {
 
 .hero-subtext-content {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: bold;
   color: #f7f7f7;

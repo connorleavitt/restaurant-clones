@@ -7,5 +7,5 @@ export const heroSliderData = [hero1, hero2, hero3];
 export const heroHeaderTextData = [
   "Welcome to Restaurant",
   "Indian and Pakistani Halal Cuisine",
-  "Tandoori Restaurant and Takeaway",
+  "Tandoori Restaurant & Takeaway",
 ];
