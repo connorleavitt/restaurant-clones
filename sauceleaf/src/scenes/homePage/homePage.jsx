@@ -5,7 +5,7 @@ import About from "../../components/About";
 import Hours from "../../components/Hours";
 import Specials from "../../components/Specials";
 import Testimonials from "../../components/Testimonials";
-// import Contact from "../../components/Contact";
+import Contact from "../../components/Contact";
 import Navbar from "../../components/Navbar";
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hours />
       <Specials />
       <Testimonials />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );
