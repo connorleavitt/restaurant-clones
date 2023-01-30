@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function NavbarPage() {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
-  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
+  const isNonMobileScreens = useMediaQuery("(min-width: 1200px)");
 
   const theme = useTheme();
   const neutralLight = theme.palette.neutral.light;
