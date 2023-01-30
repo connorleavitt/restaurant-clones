@@ -45,12 +45,12 @@ button {
 }
 
 .main-content {
-  margin: 0 5rem;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .highlight-bar {
   /* margin: 1rem; */
-  /* max-width: 1100px; */
   display: flex;
   justify-content: center;
   /* overflow-x: scroll; */
@@ -60,4 +60,58 @@ button {
   color: #d9d9d9;
   padding: 0 8px;
   content: "|";
+}
+
+.article--section {
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr;
+}
+
+.article--big-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article--big-button:last-child {
+  align-self: flex-start;
+}
+
+.article--big-img-container {
+  position: relative;
+  display: flex;
+}
+
+.article--big-img-source {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.article--big-live-updates-tag {
+  padding: 0.5rem;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* .article--big-main-content {
+  color: blue;
+} */
+
+.article--short-container {
+  border-top: 2px solid #d9d9d9;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.article--short-content {
+  text-align: left;
+}
+
+.article--short-content > span {
+  font-weight: bold;
 }

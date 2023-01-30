@@ -3,6 +3,7 @@ import { Box, useMediaQuery } from "@mui/material";
 import React from "react";
 import HighlightbarPage from "../highlightbar/highlightbarPage";
 import NavbarPage from "../navbar/navbarPage";
+import MainArticlePage from "../article/mainArticlePage";
 
 export default function HomePage() {
   const isNonMobileScreens = useMediaQuery("(min-width: 800px");
@@ -12,6 +13,7 @@ export default function HomePage() {
       <NavbarPage />
       <div className="main-content">
         <HighlightbarPage />
+        <MainArticlePage />
       </div>
     </Box>
   );
