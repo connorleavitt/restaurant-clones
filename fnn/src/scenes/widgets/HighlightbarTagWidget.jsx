@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 const HighlightbarTagWidget = ({ tagContent, type, isFirst = false }) => {
-  console.log(tagContent, type);
+  // console.log(tagContent, type);
   return (
     <Box display="flex" p="0" m="0">
       {isFirst ? (
