@@ -23,8 +23,8 @@ export default function MainArticlePage() {
   const mediumArticleSubcontent2 = [
     "VIDEO: Puppys are super cute!",
     "What type of dog breed is right for you?",
-    "Seriously, these puppies are super cute!! Go buy one now! Why Wait?",
-    "Cats vs. Dogs",
+    "Seriously, these puppies are super cute!! Go get one now! Why Wait?",
+    "Cats vs. Dogs: the ultimate showdown",
   ];
   return (
     <Box className="article--section">
@@ -57,12 +57,16 @@ export default function MainArticlePage() {
           image={mediumArticleImage1}
         />
         <ArticleMedium
-          mainContent="Puppies!"
+          mainContent="Puppies! Puppies!"
           subContent={mediumArticleSubcontent2}
           image={mediumArticleImage2}
         />
       </Box>
       <Box className="article--section-right">
+        <ArticleMedium
+          mainContent="Explore South Africa with a game drive"
+          image={mediumArticleImage3}
+        />
         <ArticleShort
           type="video"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit"

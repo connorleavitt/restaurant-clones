@@ -26,36 +26,40 @@ const ArticleMedium = ({ mainContent, subContent, imageType, image }) => {
         <Typography
           className="article--medium-main-content"
           sx={{
-            fontSize: "2rem",
+            fontSize: "1.7rem",
             fontWeight: "800",
+            lineHeight: "1.2",
           }}
         >
           {mainContent}
         </Typography>
       </Button>
-
-      <ul className="article--medium-list">
-        {subContent.map((content, index) => {
-          return (
-            <Button
-              key={index}
-              className="article--medium-button"
-              sx={{
-                textTransform: "none",
-                borderRadius: "0",
-                p: "0",
-                color: "black",
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "red",
-                },
-              }}
-            >
-              <li className="article--medium-sub-content">{content}</li>
-            </Button>
-          );
-        })}
-      </ul>
+      {subContent === undefined ? (
+        <></>
+      ) : (
+        <ul className="article--medium-list">
+          {subContent.map((content, index) => {
+            return (
+              <Button
+                key={index}
+                className="article--medium-button"
+                sx={{
+                  textTransform: "none",
+                  borderRadius: "0",
+                  p: "0.25rem 0",
+                  color: "black",
+                  "&:hover": {
+                    cursor: "pointer",
+                    color: "red",
+                  },
+                }}
+              >
+                <li className="article--medium-sub-content">{content}</li>
+              </Button>
+            );
+          })}
+        </ul>
+      )}
     </Box>
   );
 };

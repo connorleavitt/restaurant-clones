@@ -65,6 +65,7 @@ button {
 .article--section {
   display: grid;
   grid-template-columns: 4fr 3fr 3fr;
+  gap: 1rem;
 }
 
 .article--big-container {
@@ -101,12 +102,22 @@ button {
 .article--medium-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 1rem 0;
 }
 
 .article--medium-img-source {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.article--medium-button {
+  margin-bottom: 0.25rem;
+}
+
+.article--medium-main-content {
+  text-align: left;
 }
 
 .article--medium-list {
@@ -120,6 +131,11 @@ button {
 .article--medium-sub-content {
   word-break: break-word;
   text-align: left;
+  text-decoration: underline;
+}
+
+.article--medium-sub-content:hover {
+  text-decoration: none;
 }
 
 .article--short-container {
@@ -134,4 +150,14 @@ button {
 
 .article--short-content > span {
   font-weight: bold;
+}
+
+.article--short-video-icon {
+  font-weight: normal;
+  height: 100%;
+}
+
+.fa-circle-play {
+  color: red;
+  padding-right: 0.2rem;
 }

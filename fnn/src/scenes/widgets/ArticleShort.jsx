@@ -1,4 +1,5 @@
-import { Box, Button, IconButton, Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Box, Button, Typography } from "@mui/material";
 
 const ArticleShort = ({ content, type }) => {
   return (
@@ -18,7 +19,9 @@ const ArticleShort = ({ content, type }) => {
           }}
         >
           <Typography className="article--short-content">
-            <span>VIDEO:</span>
+            <span className="article--short-video-icon">
+              <FontAwesomeIcon icon="fa-regular fa-circle-play" />{" "}
+            </span>
             {content}
           </Typography>
         </Button>
@@ -39,7 +42,7 @@ const ArticleShort = ({ content, type }) => {
               }}
             >
               <Typography className="article--short-content">
-                <span>{type}:</span>
+                <span>{type}: </span>
                 {content}
               </Typography>
             </Button>

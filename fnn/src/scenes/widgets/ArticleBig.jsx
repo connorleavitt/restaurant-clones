@@ -11,6 +11,7 @@ const ArticleBig = ({ mainContent, subContent, type, image }) => {
               textTransform: "none",
               borderRadius: "0",
               p: "0",
+              pb: "0.4rem",
               color: "black",
               "&:hover": {
                 cursor: "pointer",
@@ -23,6 +24,7 @@ const ArticleBig = ({ mainContent, subContent, type, image }) => {
               sx={{
                 fontSize: "3rem",
                 fontWeight: "800",
+                lineHeight: "1.2",
               }}
             >
               {mainContent}
@@ -54,6 +56,9 @@ const ArticleBig = ({ mainContent, subContent, type, image }) => {
               sx={{
                 fontSize: "1.25rem",
                 fontWeight: "800",
+                lineHeight: "1.2",
+                textAlign: "left",
+                p: "0.4rem 0",
               }}
             >
               {subContent}
