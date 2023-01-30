@@ -1,32 +1,45 @@
-import { Box, Button, IconButton, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
-const ArticleShort = ({ content, type }) => {
+const ArticleMedium = ({ mainContent, subContent, imageType, image }) => {
   return (
-    <Box display="flex" p="0" m="0" className="article--short-container">
-      {type === "video" ? (
-        <Button
-          className="article--short-button"
+    <Box className="article--medium-container">
+      <Box className="article--medium-img-container">
+        <img
+          src={image}
+          alt="article medium image"
+          className="article--medium-img-source"
+        />
+      </Box>
+      <Button
+        className="article--medium-button"
+        sx={{
+          textTransform: "none",
+          borderRadius: "0",
+          p: "0",
+          color: "black",
+          "&:hover": {
+            cursor: "pointer",
+            color: "red",
+          },
+        }}
+      >
+        <Typography
+          className="article--medium-main-content"
           sx={{
-            textTransform: "none",
-            borderRadius: "0",
-            p: "0",
-            color: "black",
-            "&:hover": {
-              cursor: "pointer",
-              color: "red",
-            },
+            fontSize: "2rem",
+            fontWeight: "800",
           }}
         >
-          <Typography className="article--short-content">
-            <span>VIDEO:</span>
-            {content}
-          </Typography>
-        </Button>
-      ) : (
-        <>
-          {type !== undefined ? (
+          {mainContent}
+        </Typography>
+      </Button>
+
+      <ul className="article--medium-list">
+        {subContent.map((content, index) => {
+          return (
             <Button
-              className="article--short-button"
+              key={index}
+              className="article--medium-button"
               sx={{
                 textTransform: "none",
                 borderRadius: "0",
@@ -38,34 +51,13 @@ const ArticleShort = ({ content, type }) => {
                 },
               }}
             >
-              <Typography className="article--short-content">
-                <span>{type}:</span>
-                {content}
-              </Typography>
+              <li className="article--medium-sub-content">{content}</li>
             </Button>
-          ) : (
-            <Button
-              className="article--short-button"
-              sx={{
-                textTransform: "none",
-                borderRadius: "0",
-                p: "0",
-                color: "black",
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "red",
-                },
-              }}
-            >
-              <Typography className="article--short-content">
-                {content}
-              </Typography>
-            </Button>
-          )}
-        </>
-      )}
+          );
+        })}
+      </ul>
     </Box>
   );
 };
 
-export default ArticleShort;
+export default ArticleMedium;

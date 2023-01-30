@@ -98,9 +98,29 @@ button {
   font-weight: bold;
 }
 
-/* .article--big-main-content {
-  color: blue;
-} */
+.article--medium-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article--medium-img-source {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.article--medium-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.article--medium-sub-content {
+  word-break: break-word;
+  text-align: left;
+}
 
 .article--short-container {
   border-top: 2px solid #d9d9d9;

@@ -6,12 +6,26 @@ import FlexBetween from "../../components/FlexBetween";
 
 import ArticleShort from "../widgets/ArticleShort";
 import ArticleBig from "../widgets/ArticleBig";
+import ArticleMedium from "../widgets/ArticleMedium";
+
+// IMAGES
 import bigArticleImage from "../../assets/img/roman-kraft-_Zua2hyvTBk-unsplash.jpg";
+import mediumArticleImage1 from "../../assets/img/aleksandr-popov-Xbh_OGLRfUM-unsplash.jpg";
+import mediumArticleImage2 from "../../assets/img/bharathi-kannan-rfL-thiRzDs-unsplash.jpg";
+import mediumArticleImage3 from "../../assets/img/redcharlie-redcharlie1-WQRdXOBJLV0-unsplash.jpg";
 
 export default function MainArticlePage() {
   const theme = useTheme();
   // const background = theme.palette.background.default;
 
+  const mediumArticleSubcontent1 = ["Delays expected to last hours"];
+
+  const mediumArticleSubcontent2 = [
+    "VIDEO: Puppys are super cute!",
+    "What type of dog breed is right for you?",
+    "Seriously, these puppies are super cute!! Go buy one now! Why Wait?",
+    "Cats vs. Dogs",
+  ];
   return (
     <Box className="article--section">
       <Box className="article--section-left">
@@ -36,7 +50,18 @@ export default function MainArticlePage() {
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         />
       </Box>
-      <Box className="article--section-middle"></Box>
+      <Box className="article--section-middle">
+        <ArticleMedium
+          mainContent="Long traffic delays in major US city"
+          subContent={mediumArticleSubcontent1}
+          image={mediumArticleImage1}
+        />
+        <ArticleMedium
+          mainContent="Puppies!"
+          subContent={mediumArticleSubcontent2}
+          image={mediumArticleImage2}
+        />
+      </Box>
       <Box className="article--section-right">
         <ArticleShort
           type="video"
