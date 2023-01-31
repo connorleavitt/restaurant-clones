@@ -18,7 +18,10 @@ const ArticleShort = ({ content, type }) => {
             },
           }}
         >
-          <Typography className="article--short-content">
+          <Typography
+            className="article--short-content"
+            sx={{ fontSize: "1rem" }}
+          >
             <span className="article--short-video-icon">
               <FontAwesomeIcon icon="fa-regular fa-circle-play" />{" "}
             </span>
@@ -41,7 +44,10 @@ const ArticleShort = ({ content, type }) => {
                 },
               }}
             >
-              <Typography className="article--short-content">
+              <Typography
+                className="article--short-content"
+                sx={{ fontSize: "1rem" }}
+              >
                 <span>{type}: </span>
                 {content}
               </Typography>
@@ -60,7 +66,10 @@ const ArticleShort = ({ content, type }) => {
                 },
               }}
             >
-              <Typography className="article--short-content">
+              <Typography
+                className="article--short-content"
+                sx={{ fontSize: "1rem" }}
+              >
                 {content}
               </Typography>
             </Button>

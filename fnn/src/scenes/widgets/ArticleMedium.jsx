@@ -46,6 +46,7 @@ const ArticleMedium = ({ mainContent, subContent, imageType, image }) => {
                 sx={{
                   textTransform: "none",
                   borderRadius: "0",
+                  fontSize: "1rem",
                   p: "0.25rem 0",
                   color: "black",
                   "&:hover": {
