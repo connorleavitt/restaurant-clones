@@ -14,3 +14,5 @@ Recreated the CNN homepage with navigation bar, highlight bar, main articles (Bi
 2. Create Cookies popup
 3. Create footer directory
 4. Logic for "More" in nav as a drop down
+
+![Alt text](./public/FNN_Screenshot.png?raw=true "Title")
