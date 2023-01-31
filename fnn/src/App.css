@@ -1,14 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-:root {
-  --ff-primary: "Rubik", sans-serif;
-  --ff-secondary: "Ubuntu Mono", monospace;
 }
 
 /* General Styles */
@@ -19,8 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--ff-primary);
-  line-height: 1.6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 button {
@@ -61,10 +53,8 @@ button {
 }
 
 .highlight-bar {
-  /* margin: 1rem; */
   display: flex;
   justify-content: center;
-  /* overflow-x: scroll; */
 }
 
 .highlight-bar--tag-content::after {

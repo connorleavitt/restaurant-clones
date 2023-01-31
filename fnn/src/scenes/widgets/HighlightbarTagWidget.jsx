@@ -7,13 +7,17 @@ const HighlightbarTagWidget = ({ tagContent, type, isFirst = false }) => {
       {isFirst ? (
         <Typography
           className="highlight-bar--tag-type"
-          fontWeight="500"
-          color="red"
           pr="0.5rem"
           textTransform="uppercase"
           sx={{
+            fontSize: "0.8rem",
+            fontWeight: "bold",
+            color: "red",
             "&:hover": {
               cursor: "pointer",
+              fontSize: "0.8rem",
+              fontWeight: "bold",
+              color: "red",
             },
           }}
         >
@@ -24,9 +28,11 @@ const HighlightbarTagWidget = ({ tagContent, type, isFirst = false }) => {
       )}
       <Typography
         className="highlight-bar--tag-content"
-        fontWeight="500"
         sx={{
           color: "black",
+          fontSize: "0.8rem",
+          fontWeight: "bold",
+
           "&:hover": {
             cursor: "pointer",
             color: "red",

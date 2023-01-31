@@ -16,7 +16,7 @@ export default function HighlightbarPage() {
       {/* LIVE */}
       <IconButton
         sx={{
-          fontSize: "1rem",
+          // fontSize: ".5rem",
           borderRadius: "0",
           p: "0",
           "&:hover": {

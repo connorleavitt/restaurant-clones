@@ -4,6 +4,7 @@ import React from "react";
 import HighlightbarPage from "../highlightbar/highlightbarPage";
 import NavbarPage from "../navbar/navbarPage";
 import MainArticlePage from "../article/mainArticlePage";
+import SubArticlePage from "../article/subArticlePage";
 
 export default function HomePage() {
   const isNonMobileScreens = useMediaQuery("(min-width: 800px");
@@ -14,6 +15,7 @@ export default function HomePage() {
       <div className="main-content">
         <HighlightbarPage />
         <MainArticlePage />
+        {/* <SubArticlePage /> */}
       </div>
     </Box>
   );
